@@ -136,12 +136,12 @@ namespace Rhino.Mocks
 		{
 			return Arg<T>.Is.Equal(arg);
 		}
-
+        /// <inheritdoc/>
         public static T Matches<T>(Expression<Predicate<T>> predicate)
         {
             return Arg<T>.Matches(predicate);
         }
-
+        /// <inheritdoc/>
         public static T Matches<T>(AbstractConstraint<T> constraint)
         {
             return Arg<T>.Matches(constraint);
